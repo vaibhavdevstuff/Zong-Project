@@ -99,8 +99,6 @@ public class PlayerController : MonoBehaviour
             if (item)
             {
                 item.Interact(gameObject);
-
-                interactableObject = null;
             }
 
         }
