@@ -37,7 +37,7 @@ public class InstrumentItemHandler : MonoBehaviour
                 if (playerUI)
                 {
                     playerUI.ShowUI();
-                    playerUI.AddItemToInstrument(item.Name);
+                    playerUI.UpdateItemToInstrument(instrumentItems);
                 }
 
                 detectedItem = null;
@@ -58,6 +58,8 @@ public class InstrumentItemHandler : MonoBehaviour
         GameObject item = instrumentItems[0];
 
         instrumentItems.RemoveAt(0);
+
+        playerUI.UpdateItemToInstrument(instrumentItems);
 
         return item;
     }
