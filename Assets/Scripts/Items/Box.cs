@@ -13,8 +13,12 @@ public class Box : BaseInteractable
 
     private GameObject instrumentItem;
 
+    private AudioSource audioSource;
+
     private void Start()
     {
+        audioSource = GetComponent<AudioSource>();
+
         ActivateUI(false);
     }
 
@@ -25,6 +29,8 @@ public class Box : BaseInteractable
 
     public override void Interact(GameObject Player)
     {
+        PlayAudio();
+
         InstrumentItemHandler instrumentItemHandler = Player.GetComponent<InstrumentItemHandler>();
 
 
@@ -85,7 +91,13 @@ public class Box : BaseInteractable
         InteractUI.SetActive(value);
     }
 
-
+    private void PlayAudio()
+    {
+        if (AudioManager.instance)
+            AudioManager.instance.PlaySound(AudioManager.instance.InteractionClip);
+        else
+            Debug.LogError("Audio Source not Found");
+    }
 
 
 

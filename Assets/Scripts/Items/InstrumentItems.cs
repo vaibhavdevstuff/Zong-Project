@@ -11,6 +11,12 @@ public class InstrumentItems : BaseInteractable
     {
         ActivateUI(false);
 
+        InstanciateItemObject();
+    }
+
+    private void InstanciateItemObject()
+    {
+
         GameObject itemObject = Instantiate(ItemPrefab, transform.position, Quaternion.identity);
         itemObject.transform.parent = transform;
 
@@ -22,6 +28,8 @@ public class InstrumentItems : BaseInteractable
     public override void Interact(GameObject Player)
     {
         base.Interact(Player);
+
+        PlayAudio();
 
         transform.parent = Player.transform;
         gameObject.SetActive(false);
@@ -51,6 +59,13 @@ public class InstrumentItems : BaseInteractable
         PickupUI.SetActive(value);
     }
 
+    private void PlayAudio()
+    {
+        if (AudioManager.instance)
+            AudioManager.instance.PlaySound(AudioManager.instance.PickupClip);
+        else
+            Debug.LogError("Audio Source not Found");
+    }
 
 
 

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8048866204914682014}
   - component: {fileID: 1318182383922263765}
   - component: {fileID: 1374188515475861800}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,6 +116,7 @@ GameObject:
   - component: {fileID: 3275132013593425151}
   - component: {fileID: 1538698545065301953}
   - component: {fileID: 6444988880444537454}
+  - component: {fileID: 8792462844981370271}
   m_Layer: 7
   m_Name: Box
   m_TagString: Untagged
@@ -181,6 +182,102 @@ MonoBehaviour:
   ItemHolder: {fileID: 8320772360862885931}
   AuraParticle: {fileID: 5238547498875963122}
   InteractUI: {fileID: 6620918825626797902}
+--- !u!82 &8792462844981370271
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3109556355564121493}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 0.5
+  MaxDistance: 6
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &6158305136322086333
 GameObject:
   m_ObjectHideFlags: 0
@@ -192,7 +289,7 @@ GameObject:
   - component: {fileID: 3959144010708931418}
   - component: {fileID: 3815307214681446012}
   - component: {fileID: 3709952664164303484}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Name (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -328,7 +425,7 @@ GameObject:
   - component: {fileID: 1336477140565276450}
   - component: {fileID: 4400921319252354827}
   - component: {fileID: 2050139736069128241}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Box Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -441,7 +538,7 @@ GameObject:
   - component: {fileID: 4758345255782603629}
   - component: {fileID: 108686852657487919}
   - component: {fileID: 6244967687478632845}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -575,7 +672,7 @@ GameObject:
   - component: {fileID: 5305974854659673289}
   - component: {fileID: 8502972795610068160}
   - component: {fileID: 2610422419228067414}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -650,7 +747,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8320772360862885931}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Item Holder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -683,7 +780,7 @@ GameObject:
   - component: {fileID: 1399166483930047026}
   - component: {fileID: 5937352305992004905}
   - component: {fileID: 5036420117025932821}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -780,6 +877,14 @@ PrefabInstance:
     - target: {fileID: 1343423572576872, guid: 85d6ef735eaa04e41ac9800900084d28, type: 3}
       propertyPath: m_Name
       value: Gold aura
+      objectReference: {fileID: 0}
+    - target: {fileID: 1343423572576872, guid: 85d6ef735eaa04e41ac9800900084d28, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1565866808814652, guid: 85d6ef735eaa04e41ac9800900084d28, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4635844253417932, guid: 85d6ef735eaa04e41ac9800900084d28, type: 3}
       propertyPath: m_LocalPosition.x
